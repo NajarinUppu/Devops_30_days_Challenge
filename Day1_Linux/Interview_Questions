@@ -4,3 +4,45 @@ Process = An independent running program
 Thread = Smallest execution unit inside a process
 
 =================================================================
+Today's Interview Questions
+Difference between chmod and chown?
+What does chmod 755 mean?
+What does chmod 777 mean?
+Where are Linux users stored?
+How do you make a script executable?
+What is the difference between User and Group?
+1. Difference between chmod and chown?
+chmod changes permissions (read, write, execute) on files/directories.
+chown changes the owner and group ownership of files/directories.
+Example: chmod 755 script.sh
+        chown ubuntu:ubuntu script.sh
+2. What does chmod 755 mean?
+  User   = rwx (7)
+Group  = r-x (5)
+Others = r-x (5)
+chmod 755 deploy.sh Used for executable scripts.
+3. What does chmod 777 mean?
+Owner  = rwx
+Group  = rwx
+Others = rwx
+Interview Tip:
+Never recommend 777 in production unless absolutely necessary because it creates security risks.
+
+4. Where are Linux users stored?
+  /etc/passwd
+  User passwords (hashed) are stored in:/etc/shadow
+
+5. How do you make a script executable?
+  chmod +x deploy.sh
+./deploy.sh
+
+6. Difference between User and Group?
+  A User is an individual account in Linux.
+A Group is a collection of users that share common permissions and access controls.
+
+Ex:User   : jenkins
+
+Group  : devops
+         ├── jenkins
+         ├── ubuntu
+         └── admin
