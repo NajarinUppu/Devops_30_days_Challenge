@@ -1,0 +1,22 @@
+Login to AWS Console -> AWS Console -> IAM
+****Learn****
+IAM User  =  A person using AWS.
+IAM Group = Collection of users.
+IAM Role = Temporary permissions assigned to AWS services or users.
+Policy =  Permissions document.
+======================================
+Practical:
+  Create:
+      Group: Developers
+  Create : 
+      User: Devops-user
+  Attach:'ReadOnlyAccess'
+Understand the relationship:
+        Policy  
+          ↓
+        Group
+          ↓
+        User
+
+
+      
