@@ -1,0 +1,6 @@
+Interview Question #1
+***What is the difference between a Process and a Thread? ****
+Process = An independent running program
+Thread = Smallest execution unit inside a process
+
+=================================================================
