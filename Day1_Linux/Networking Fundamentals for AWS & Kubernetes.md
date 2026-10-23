@@ -1,0 +1,5 @@
+1. Find Your Server IP
+     >ip addr
+      # or
+     ip a
+     >
