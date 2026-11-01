@@ -2,7 +2,7 @@ pipeline {
 	agent any 
 	environment {
 		APP_NAME ="Banking App"
-		VERSION = "v1"
+		VERSION = "v2"
 	}
 	stages {
 		stage('clone') {
